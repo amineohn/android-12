@@ -107,7 +107,7 @@ export default function Home() {
                                 <div className="bg-[#D0CDBC] rounded-3xl w-[165px] h-[90px]">
                                     <div className="px-4 py-1 text-left">
                                         <div className="w-40 space-y-1">
-                                            <span className="text-black/70  text-sm font-medium font-poppins">
+                                            <span className="text-black/70 text-sm font-medium font-poppins">
                                                 “I’m making a lasagna for dinner!” <span className="text-black/30 font-poppins font-medium text-sm">1 hour ago</span>
                                             </span>
                                             <div className="flex justify-start items-center space-x-2">
@@ -134,6 +134,11 @@ export default function Home() {
                                             <Icons icon="googleSearch" className="w-5 h-5" />
                                             <Icons icon="microphone" className="w-5 h-5" />
                                         </div>
+                                    </div>
+                                </div>
+                                <div className="mt-8 ml-28">
+                                    <div className="">
+                                        <div className="w-14 h-0.5 bg-white rounded" />
                                     </div>
                                 </div>
                             </div>
