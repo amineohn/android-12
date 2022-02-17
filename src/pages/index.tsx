@@ -7,8 +7,8 @@ export default function Home() {
                 <div className="absolute">
                     <svg width="762" height="800" version="1.1" viewBox="0 0 762 1640" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(0 517.48)">
-                            <path d="m760-44.98v100" fill="none" stroke="#000" stroke-width="20" />
-                            <path d="m760 135.02v200" fill="none" stroke="#000" stroke-width="20" />
+                            <path d="m760-44.98v100" fill="none" stroke="#000" strokeWidth="20" />
+                            <path d="m760 135.02v200" fill="none" stroke="#000" strokeWidth="20" />
                             <g>
                                 <rect y="-516.48" width="759" height="1639" rx="52.5" ry="52.5" />
                                 <rect x="9" y="-497.48" width="741" height="1600" rx="35" ry="35" fill="#333" />
