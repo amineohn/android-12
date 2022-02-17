@@ -1,4 +1,5 @@
 import Icons from "@/components/icons";
+import { kill } from "process";
 
 export default function Home() {
     return (
@@ -18,122 +19,117 @@ export default function Home() {
                         </g>
                     </svg>
                 </div>
-                <div className="w-[351px] z-20 h-[765px] rounded-2xl bg-cover bg-center bg-[url('/static/images/wallpaper.png')]">
-                    <div className="flex justify-between items-center py-2 px-2">
-                        <div className="flex justify-between items-center ml-2">
-                            <span className="text-[#524E43] font-medium ">9:30</span>
-                        </div>
-                        <div className="ml-5">
-                            <div className="bg-neutral-900 w-5 h-5 rounded-full"></div>
-                        </div>
-                        <div className="flex justify-center">
-                            <div className="flex justfiy-end items-center space-x-1">
-                                <Icons icon="LTE" className="w-4 h-4" />
-                                <Icons icon="WIFI" className="w-4 h-4" />
-                                <Icons icon="Battery" className="w-2 h-4" />
-                                <Icons icon="dot" className="w-2 h-2" />
+                <div className="w-[352px] z-20 h-[765px] rounded-2xl bg-cover bg-center bg-[url('/static/images/wallpaper.png')]">
+                    <div className="h-12">
+                        <div className="flex justify-between items-center py-2 px-2">
+                            <div className="flex justify-between items-center ml-2">
+                                <span className="text-white font-medium ">9:30</span>
+                            </div>
+                            <div className="ml-[24.3px] mb-0.5">
+                                <div className="bg-black border-2 border-neutral-700 w-5 h-5 rounded-full"></div>
+                            </div>
+                            <div className="flex justify-center px-2">
+                                <div className="flex justfiy-end items-center space-x-1.5">
+                                    <Icons icon="WIFI" className="w-[13.3px] h-[13.3px]" style={null} />
+                                    <Icons icon="LTE" className="w-[14.67px] h-[11.33px]" style={null} />
+                                    <Icons icon="Battery" className="w-2 h-[13.33px]" style={null} />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="pt-10 px-5">
-                        <div className="flex justify-start">
-                            <div className="inline-flex justify-center items-center">
-                                <div className="inline-flex ">
-                                    <div className="flex flex-col justify-center">
-                                        <div className="space-x-2 space-y-2">
-                                            <Icons icon="sun" className="w-6 h-6 absolute" />
-                                            <span className="font-medium text-center font-poppins">74°F</span>
+
+                    <div className="flex flex-col between items-center">
+                        <div className="mt-5">
+                            <div className="w-[358px] h-[203px] px-5">
+                                <div className="h-20 rounded-[28px]" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                    <div className="inline-flex items-center justify-center my-4 space-x-3">
+                                        <div className="flex justify-start items-center">
+                                            <div className="absolute px-4">
+                                                <Icons icon="searchs" className="w-[20px] h-[20px] mix-blend-color-burn" style={null} />
+                                            </div>
+                                            <input
+                                                className="w-[226px] placeholder-[#1A1C19] mix-blend font-medium text-[#1A1C19] h-[48px] px-14 py-1 rounded-xl focus:outline-none"
+                                                style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.14), rgba(6, 109, 55, 0.14)), #FBFDF7" }}
+                                                type="text"
+                                                placeholder="Search files..."
+                                            />
+                                        </div>
+                                        <button
+                                            className="w-[48px] h-[48px] rounded-xl flex items-center justify-center"
+                                            style={{ background: "linear-gradient(0deg, rgba(129, 217, 151, 0.14), rgba(129, 217, 151, 0.14)), #1A1C19" }}>
+                                            <Icons icon="paint" className="w-[24px] h-[24px] text-[#F7F7F7]" style={null} />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="h-28 rounded-3xl" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.08), rgba(6, 109, 55, 0.08)), #FBFDF7" }}>
+                                    <div className="inline-flex items-center justify-center my-4 space-x-1">
+                                        <div
+                                            className="w-[71px] h-[81px] flex-col rounded-xl flex justify-center items-center space-y-2"
+                                            style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                            <Icons icon="paint2" className="!text-black w-[24px] h-[24px]" style={{ fill: "" }} />
+                                            <span className="text-xs font-medium text-black">Note</span>
+                                        </div>
+                                        <div className="w-[71px] h-[81px] rounded-xl" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                            <div
+                                                className="w-[71px] h-[81px] flex-col rounded-xl flex justify-center items-center space-y-2"
+                                                style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                                <Icons icon="drawing" className="!text-black w-[24px] h-[24px]" style={{ fill: "" }} />
+                                                <span className="text-xs font-medium text-black">Drawing</span>
+                                            </div>
                                         </div>
 
-                                        <span className="font-medium font-poppins">Mon, Sep 21</span>
+                                        <div className="w-[71px] h-[81px] rounded-xl" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                            <div
+                                                className="w-[71px] h-[81px] flex-col rounded-xl flex justify-center items-center space-y-2"
+                                                style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                                <Icons icon="image" className="!text-black w-[24px] h-[24px]" style={{ fill: "" }} />
+                                                <span className="text-xs font-medium text-black">Image</span>
+                                            </div>
+                                        </div>
+                                        <div className="w-[71px] h-[81px] rounded-xl" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                            <div
+                                                className="w-[71px] h-[81px] flex-col rounded-xl flex justify-center items-center space-y-2"
+                                                style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
+                                                <Icons icon="video" className="!text-black w-[24px] h-[24px]" style={{ fill: "" }} />
+                                                <span className="text-xs font-medium text-black">Video</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="py-7 ml-2 relative">
-                        <div className="grid grid-cols-2">
-                            <div className="space-y-3">
-                                <div className="bg-[#D0CDBC] rounded-full w-[165px] h-[90px]">
-                                    <div className="inline-flex items-center justify-center py-2 space-x-2 my-1.5">
-                                        <div className="flex justify-end items-end">
-                                            <div className="absolute">
-                                                <Icons icon="messenger" className="w-4 h-4" />
-                                            </div>
-                                            <img src="/static/images/profile.png" className="w-14 h-14" />
-                                        </div>
-                                        <div className="flex flex-col text-left">
-                                            <span className="text-black text-sm font-medium font-poppins">Rachel</span>
-                                            <span className="text-black/30 text-sm font-medium font-poppins">2 weeks ago</span>
-                                            <span className="text-black/60 text-sm font-medium font-poppins">Chatted</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bg-[#B8947C] rounded-3xl w-[165px] h-[90px]">
-                                    <div className="px-5 py-3">
-                                        <div className="relative">
-                                            <div className="flex flex-col items-end space-y-2">
-                                                <span className="text-white font-poppins font-medium text-sm text-right">Rachel: Missed call</span>
-                                                <div className="flex justify-between items-center space-x-10">
-                                                    <div className="inline-flex items-center justify-center space-x-2 mt-3">
-                                                        <img src="/static/images/profile3.png" className="w-7 h-7" />
-                                                        <span className="font-poppins text-sm font-medium">Friends</span>
-                                                    </div>
-                                                    <div>
-                                                        <Icons icon="missingCall" className="w-5 h-5" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bg-[#B2A197] rounded-full w-[175px] h-[90px]">
-                                    <div className="px-3 py-3">
-                                        <div className="inline-flex justify-center items-center space-x-2">
-                                            <div className="flex justify-center items-center">
-                                                <Icons icon="box" className="w-16 h-16" />
-                                                <span className="text-[#B2A197] font-medium text-md absolute">MG</span>
-                                            </div>
-                                            <div className="flex flex-col w-20">
-                                                <span className="text-black font-poppins font-medium text-sm">Monica</span>
-                                                <span className="text-white/60 font-poppins font-medium text-sm">It’s Monica’s</span>
-                                                <span className="text-black/60 font-poppins font-medium text-sm">Birthday!</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="bg-[#D0CDBC] rounded-3xl w-[165px] h-[90px]">
-                                    <div className="px-4 py-1 text-left">
-                                        <div className="w-40 space-y-1">
-                                            <span className="text-black/70 text-sm font-medium font-poppins">
-                                                “I’m making a lasagna for dinner!” <span className="text-black/30 font-poppins font-medium text-sm">1 hour ago</span>
+                        <div className="my-16 mx-8">
+                            <div className="grid grid-cols-2">
+                                <div
+                                    className="w-[160px] h-[110px] -rotate-45 rounded-full"
+                                    style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.08), rgba(6, 109, 55, 0.08)), #FBFDF7", backdropFilter: "blur(1000px)" }}>
+                                    <div className="flex justify-center items-center my-3">
+                                        <div className="flex justify-center items-center flex-col rotate-90">
+                                            <span
+                                                className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#30583a] via-[#314726] to-[#30583a]"
+                                                style={{ transform: "rotate(-45deg)" }}>
+                                                71°
                                             </span>
-                                            <div className="flex justify-start items-center space-x-2">
-                                                <img src="/static/images/profile2.png" className="w-7 h-7" />
-                                                <div className="flex flex-col items-start justify-center">
-                                                    <Icons icon="dot" className="w-2" />
-                                                    <span className="font-medium font-poppins text-sm">Monica Geller</span>
-                                                </div>
-                                            </div>
+                                            <Icons icon="sun" className="w-9 h-9 z-50" style={null} />
                                         </div>
                                     </div>
                                 </div>
+                                <div></div>
                             </div>
                         </div>
-                        <div className="flex justify-end flex-col items-center absolute mx-5 my-40">
-                            <div className="inline-flex items-center justify-center space-x-8">
-                                <Icons icon="call" className="w-12 h-12" />
-                                <Icons icon="clock" className="w-12 h-12" />
-                                <Icons icon="chrome" className="w-12 h-12" />
-                                <Icons icon="camera" className="w-12 h-12" />
+                        <div className="flex justify-end flex-col items-center absolute h-[184px] w-[354px] bottom-24">
+                            <div className="inline-flex items-center justify-center space-x-4">
+                                <Icons icon="call" className="w-12 h-12" style={null} />
+                                <Icons icon="message" className="w-12 h-12" style={null} />
+                                <Icons icon="youtube" className="w-12 h-12 rounded-full" style={null} />
+                                <Icons icon="photo" className="w-12 h-12" style={null} />
+                                <Icons icon="camera" className="w-12 h-12" style={null} />
                             </div>
                             <div className="mt-8">
-                                <div className="bg-[#E2E2DA] w-72 h-10 rounded-full">
+                                <div className="bg-[#F8FAF4] w-[300px] h-10 rounded-full">
                                     <div className="flex justify-between px-2.5 py-2.5">
-                                        <Icons icon="googleSearch" className="w-5 h-5" />
-                                        <Icons icon="microphone" className="w-5 h-5" />
+                                        <Icons icon="googleSearch" className="w-5 h-5" style={null} />
+                                        <Icons icon="microphone" className="w-5 h-5" style={null} />
                                     </div>
                                 </div>
                             </div>
