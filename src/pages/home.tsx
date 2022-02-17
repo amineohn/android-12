@@ -1,12 +1,17 @@
 import Icons from "@/components/icons";
 import { getHours, getMinutes } from "date-fns";
+import { useRouter } from "next/router";
 
 export default function Home() {
     const hours = getHours(new Date());
     const minutes = getMinutes(new Date());
+    const router = useRouter();
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2 select-none">
             <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+                <div className="flex justify-center items-end">
+                    <div onClick={() => router.push("/")} className="bg-red-500 h-5 w-5 z-50 absolute" />
+                </div>
                 <div className="absolute">
                     <svg width="762" height="800" version="1.1" viewBox="0 0 762 1640" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(0 517.48)">
@@ -44,7 +49,7 @@ export default function Home() {
 
                     <div className="flex flex-col between items-center">
                         <div className="mt-5">
-                            <div className="w-[358px] h-[203px] px-5">
+                            <div className="w-[358px] h-[203px] px-5 slide-in-top">
                                 <div className="h-20 rounded-[28px]" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
                                     <div className="inline-flex items-center justify-center my-4 space-x-3">
                                         <div className="flex justify-start items-center">
@@ -65,7 +70,7 @@ export default function Home() {
                                         </button>
                                     </div>
                                 </div>
-                                <div className="h-28 rounded-3xl" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.08), rgba(6, 109, 55, 0.08)), #FBFDF7" }}>
+                                <div className="h-28 rounded-3xl slide-in-top" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.08), rgba(6, 109, 55, 0.08)), #FBFDF7" }}>
                                     <div className="inline-flex items-center justify-center my-4 space-x-1">
                                         <div
                                             className="w-[71px] h-[81px] flex-col rounded-xl flex justify-center items-center space-y-2"
@@ -103,7 +108,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="my-16 mx-8">
-                            <div className="grid grid-cols-2">
+                            <div className="grid grid-cols-2 slide-in-top">
                                 <div
                                     className="w-[160px] h-[110px] -rotate-45 rounded-full"
                                     style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.08), rgba(6, 109, 55, 0.08)), #FBFDF7", backdropFilter: "blur(1000px)" }}>
@@ -121,7 +126,7 @@ export default function Home() {
                                 <div></div>
                             </div>
                         </div>
-                        <div className="flex justify-end flex-col items-center absolute h-[184px] w-[354px] bottom-24">
+                        <div className="flex justify-end flex-col items-center absolute h-[184px] w-[354px] bottom-24 slide-in-top">
                             <div className="inline-flex items-center justify-center space-x-4">
                                 <Icons icon="call" className="w-12 h-12" style={null} />
                                 <Icons icon="message" className="w-12 h-12" style={null} />

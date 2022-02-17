@@ -24,7 +24,7 @@ export default function Home() {
                     </svg>
                 </div>
                 <div className="w-[352px] z-20 h-[765px] rounded-2xl bg-cover bg-center bg-[url('/static/images/wallpaper.png')]">
-                    <div className="h-12">
+                    <div className="h-12 scale-up-center">
                         <div className="flex justify-between items-center py-2 px-2">
                             <div className="flex justify-between items-center ml-2">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</div>
                             <div className="ml-[24.3px] mb-0.5">
@@ -40,16 +40,16 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex justify-start px-5 py-9">
-                        <span className="text-white font-medium">Sun, Oct 31</span>
+                        <span className="text-white font-medium scale-up-center">Sun, Oct 31</span>
                     </div>
                     <div className="flex flex-col justify-center items-center py-9">
-                        <div className="w-[336px] h-[352px] flex flex-col items-center justify-center">
+                        <div className="w-[336px] h-[352px] flex flex-col items-center justify-center scale-up-center">
                             <div className="text-[#9CF6B1] flex flex-col items-center justify-center text-[11rem]">
                                 <span className="">{hours}</span>
                                 <span className="-mt-24 ml-4">{minutes}</span>
                             </div>
                         </div>
-                        <div className="py-16">
+                        <div className="py-16 scale-up-center">
                             <div onClick={() => router.push("/home")}>
                                 <Icons icon="fingerprint" className="w-[68px] h-[68px]" style={null} />
                             </div>
