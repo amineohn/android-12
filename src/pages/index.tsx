@@ -23,7 +23,7 @@ export default function Home() {
                         <div className="flex justify-between items-center ml-2">
                             <span className="text-[#524E43] font-medium ">9:30</span>
                         </div>
-                        <div>
+                        <div className="ml-5">
                             <div className="bg-neutral-900 w-5 h-5 rounded-full"></div>
                         </div>
                         <div className="flex justify-center">
@@ -139,7 +139,7 @@ export default function Home() {
                             </div>
                             <div className="mt-5">
                                 <div className="">
-                                    <div className="w-14 h-0.5 bg-white rounded" />
+                                    <div className="w-16 h-0.5 bg-white rounded" />
                                 </div>
                             </div>
                         </div>
