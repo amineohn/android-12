@@ -51,7 +51,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="py-7 ml-2">
+                    <div className="py-7 ml-2 relative">
                         <div className="grid grid-cols-2">
                             <div className="space-y-3">
                                 <div className="bg-[#D0CDBC] rounded-full w-[165px] h-[90px]">
@@ -121,25 +121,25 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-36 px-4 ml-1">
-                                <div className="inline-flex items-center justify-center space-x-8">
-                                    <Icons icon="call" className="w-12 h-12" />
-                                    <Icons icon="clock" className="w-12 h-12" />
-                                    <Icons icon="chrome" className="w-12 h-12" />
-                                    <Icons icon="camera" className="w-12 h-12" />
-                                </div>
-                                <div className="mt-8">
-                                    <div className="bg-[#E2E2DA] w-72 h-10 rounded-full">
-                                        <div className="flex justify-between px-2.5 py-2.5">
-                                            <Icons icon="googleSearch" className="w-5 h-5" />
-                                            <Icons icon="microphone" className="w-5 h-5" />
-                                        </div>
+                        </div>
+                        <div className="flex justify-end flex-col items-center absolute mx-5 my-40">
+                            <div className="inline-flex items-center justify-center space-x-8">
+                                <Icons icon="call" className="w-12 h-12" />
+                                <Icons icon="clock" className="w-12 h-12" />
+                                <Icons icon="chrome" className="w-12 h-12" />
+                                <Icons icon="camera" className="w-12 h-12" />
+                            </div>
+                            <div className="mt-8">
+                                <div className="bg-[#E2E2DA] w-72 h-10 rounded-full">
+                                    <div className="flex justify-between px-2.5 py-2.5">
+                                        <Icons icon="googleSearch" className="w-5 h-5" />
+                                        <Icons icon="microphone" className="w-5 h-5" />
                                     </div>
                                 </div>
-                                <div className="mt-8 ml-28">
-                                    <div className="">
-                                        <div className="w-14 h-0.5 bg-white rounded" />
-                                    </div>
+                            </div>
+                            <div className="mt-5">
+                                <div className="">
+                                    <div className="w-14 h-0.5 bg-white rounded" />
                                 </div>
                             </div>
                         </div>
