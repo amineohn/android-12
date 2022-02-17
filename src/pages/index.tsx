@@ -18,7 +18,7 @@ export default function Home() {
                         </g>
                     </svg>
                 </div>
-                <div className="w-[351px] z-20 h-[765px] rounded-2xl bg-cover bg-center bg-[url('https://img.phonandroid.com/2021/02/Android-12-Wallpaper-1.png')]">
+                <div className="w-[351px] z-20 h-[765px] rounded-2xl bg-cover bg-center bg-[url('/static/images/wallpaper.png')]">
                     <div className="flex justify-between items-center py-2 px-2">
                         <div className="flex justify-between items-center ml-2">
                             <span className="text-[#524E43] font-medium ">9:30</span>
