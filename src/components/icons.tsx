@@ -232,13 +232,13 @@ const Icons = ({ icon, className, style }: IIcons) => {
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className={className} viewBox="0 0 51 51" fill="none">
                     <g filter="url(#filter0_d_7021_5956)">
-                        <g clip-path="url(#clip0_7021_5956)">
+                        <g clipPath="url(#clip0_7021_5956)">
                             <rect x="1.80005" y="1" width="48" height="48" fill="url(#pattern25)" />
                         </g>
                     </g>
                     <defs>
                         <filter id="filter0_d_7021_5956" x="0.800049" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
                             <feGaussianBlur stdDeviation="0.5" />
@@ -268,13 +268,13 @@ const Icons = ({ icon, className, style }: IIcons) => {
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className={className} viewBox="0 0 51 51" fill="none">
                     <g filter="url(#filter0_d_7021_5952)">
-                        <g clip-path="url(#clip0_7021_5952)">
+                        <g clipPath="url(#clip0_7021_5952)">
                             <rect x="1.6001" y="1" width="48" height="48" fill="url(#pattern20)" />
                         </g>
                     </g>
                     <defs>
                         <filter id="filter0_d_7021_5952" x="0.600098" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
                             <feGaussianBlur stdDeviation="0.5" />
@@ -330,13 +330,13 @@ const Icons = ({ icon, className, style }: IIcons) => {
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className={className} viewBox="0 0 51 51" fill="none">
                     <g filter="url(#filter0_d_7021_5968)">
-                        <g clip-path="url(#clip0_7021_5968)">
+                        <g clipPath="url(#clip0_7021_5968)">
                             <rect x="1.40015" y="1" width="48" height="48" fill="url(#pattern50)" />
                         </g>
                     </g>
                     <defs>
                         <filter id="filter0_d_7021_5968" x="0.400146" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
                             <feGaussianBlur stdDeviation="0.5" />
@@ -366,13 +366,13 @@ const Icons = ({ icon, className, style }: IIcons) => {
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className={className} viewBox="0 0 51 51" fill="none">
                     <g filter="url(#filter0_d_7021_5964)">
-                        <g clip-path="url(#clip0_7021_5964)">
+                        <g clipPath="url(#clip0_7021_5964)">
                             <rect x="1.2002" y="1" width="48" height="48" fill="url(#pattern0)" />
                         </g>
                     </g>
                     <defs>
                         <filter id="filter0_d_7021_5964" x="0.200195" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
                             <feGaussianBlur stdDeviation="0.5" />
