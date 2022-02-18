@@ -47,7 +47,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col between items-center">
+                    <div className="flex flex-col items-center">
                         <div className="mt-5">
                             <div className="w-[358px] h-[203px] px-5 slide-in-top">
                                 <div className="h-20 rounded-[28px]" style={{ background: "linear-gradient(0deg, rgba(6, 109, 55, 0.05), rgba(6, 109, 55, 0.05)), #FBFDF7" }}>
