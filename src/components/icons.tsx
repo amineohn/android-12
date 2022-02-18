@@ -237,7 +237,7 @@ const Icons = ({ icon, className, style }: IIcons) => {
                         </g>
                     </g>
                     <defs>
-                        <filter id="filter0_d_7021_5956" x="0.800049" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <filter id="filter0_d_7021_5956" x="0.800049" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                             <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
@@ -273,7 +273,7 @@ const Icons = ({ icon, className, style }: IIcons) => {
                         </g>
                     </g>
                     <defs>
-                        <filter id="filter0_d_7021_5952" x="0.600098" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <filter id="filter0_d_7021_5952" x="0.600098" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                             <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
@@ -335,7 +335,7 @@ const Icons = ({ icon, className, style }: IIcons) => {
                         </g>
                     </g>
                     <defs>
-                        <filter id="filter0_d_7021_5968" x="0.400146" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <filter id="filter0_d_7021_5968" x="0.400146" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                             <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
@@ -371,7 +371,7 @@ const Icons = ({ icon, className, style }: IIcons) => {
                         </g>
                     </g>
                     <defs>
-                        <filter id="filter0_d_7021_5964" x="0.200195" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <filter id="filter0_d_7021_5964" x="0.200195" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                             <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="0.5" />
